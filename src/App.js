@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from '@material-ui/core';
 import './App.css';
 import '@fontsource/roboto';
 
@@ -8,8 +9,10 @@ import PostForm from './components/PostForm';
 function App() {
   return (
     <div className="App">
-      <PostForm />
-      <Posts />
+      <Container maxWidth="sm">
+        <PostForm />
+        <Posts />
+      </Container>
     </div>
   );
 }
